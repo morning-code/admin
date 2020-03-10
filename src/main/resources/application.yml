@@ -1,5 +1,7 @@
+server:
+  port: 8090
 keycloak:
-  auth-server-url: http://localhost:8180/auth
+  auth-server-url: http://localhost:8190/auth
   realm: SpringBootKeycloak
   resource: login-app
   public-client: true

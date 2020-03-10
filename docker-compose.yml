@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-    admin-app:
+    app:
         build: .
         image: tiqwab/boot:0.0.1
         ports:
-            - "8080:8080"
+            - "8090:8090"
         volumes:
             - .:/morning-code-admin
     mysql:
@@ -31,7 +31,7 @@ services:
             # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the MySQL JDBC driver documentation in order to use it.
             #JDBC_PARAMS: "connectTimeout=30000"
         ports:
-            - 8180:8080
+            - 8190:8080
         depends_on:
             - mysql
 
